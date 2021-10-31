@@ -1,0 +1,23 @@
+.navbar a.nav-link {
+    text-transform: uppercase;
+    color: white!important;
+    font-size: 17px;
+}
+.navbar a.nav-link:hover{
+    color: yellow!important;
+}
+nav.navbar {
+    background-color: black!important;
+    padding: 23px 0;
+}
+.nav-link img {
+    width: 75%;
+}
+a.logo-img.nav-link {
+    width: 17%;
+}
+@media only screen and (min-width:320px) and (max-width:767px){
+a.logo-img.nav-link {
+    width: 52%;
+}
+}

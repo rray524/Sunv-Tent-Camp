@@ -1,0 +1,16 @@
+.carousel-item img {
+    height: 900px;
+}
+@media only screen and (min-width:320px) and (max-width:767px){
+    .carousel-item img {
+        height: auto;
+    }
+    .carousel-caption {
+        margin-bottom: 0!important;
+    }
+}
+
+.carousel-caption {
+    background: #0000007a;
+    margin-bottom: 18%;
+}
