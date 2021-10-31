@@ -19,7 +19,8 @@ const useFirebase = () => {
     const logout = () => {
         signOut(auth)
             .then(() => {
-                setUser({})
+                setUser({});
+
             })
             .catch((error) => {
                 const errorMessage = error.message;

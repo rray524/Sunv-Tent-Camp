@@ -1,0 +1,12 @@
+.button-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.card-container .card {
+    border: none;
+    border-radius: 0;
+}
+.card-container .card:hover {
+    opacity: 0.7;
+    transition: all 0.5s;
+}

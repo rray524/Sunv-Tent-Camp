@@ -11,7 +11,7 @@ const Sites = () => {
                 </h2>
                 <p className="text-center">Get back to basics and sleep under starry night skies on one of our rustic tent camping sites. Choose from primitive options or upgrade to a site that includes water and electric.</p>
                 <Link to="/way">
-                    <button type="button" class="btn btn-light">Ways to Stay</button>
+                    <button type="button" className="btn btn-light">Ways to Stay</button>
                 </Link>
             </div>
         </div>
