@@ -1,0 +1,15 @@
+img.stay-img {
+    width: 100%;
+}
+.solo-container{
+    margin-top: 150px;
+}
+p.stay-para {
+    font-size: 19px;
+    line-height: 41px;
+    font-style: italic;
+}
+img.stay-img {
+    width: 100%;
+    border: 12px solid #012A3F;
+}

@@ -1,0 +1,12 @@
+.intro h2 {
+    font-family: 'Kaushan Script', cursive;
+}
+.intro-para {
+    width: 50%;
+    margin: auto;
+    padding: 34px 0;
+    letter-spacing: 3px;
+}
+.intro {
+    margin: 79px 0;
+}

@@ -1,7 +1,9 @@
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
+import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
+import WayToStay from './Pages/WayToStay/WayToStay';
 
 function App() {
   return (
@@ -14,6 +16,13 @@ function App() {
           <Route path="/home">
             <Redirect to="/" />
           </Route>
+          <Route path="/way">
+            <WayToStay></WayToStay>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+
           <Route path="*">
             <NotFound></NotFound>
           </Route>

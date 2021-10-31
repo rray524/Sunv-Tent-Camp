@@ -1,0 +1,21 @@
+.expect-wrap img {
+    width: 100%;
+}
+.expect-wrap {
+    background: #f3f5f6;
+    padding: 90px 0;
+}
+.expect-wrap p {
+    font-size: 19px;
+    line-height: 38px;
+    margin-top: 47px;
+}
+.service-point {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.service-point ul li {
+    font-weight: lighter;
+    color: #212529c2;
+}

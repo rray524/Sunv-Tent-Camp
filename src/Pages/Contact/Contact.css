@@ -1,0 +1,23 @@
+.container-wrap-form form {
+    display: flex;
+    flex-direction: column;
+}
+.container-wrap-form input.text-warning {
+    font-size: 18px;
+    padding: 10px 0;
+    width: 30%;
+    margin: 34px auto;
+}
+.container-wrap-form input {
+    padding: 13px 16px;
+    margin: 17px 0;
+    border: 1px solid white;
+}
+.form-div {
+    background: #f3f5f6;
+    padding: 70px 0;
+}
+::placeholder {
+    color: black;
+    font-size: 19px;
+  }

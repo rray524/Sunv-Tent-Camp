@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import errorImg from '../../imgs/404.jpg'
+import Footer from '../Shared Pages/Footer/Footer';
 import Header from '../Shared Pages/Header/Header';
 import './NotFound.css'
 const NotFound = () => {
@@ -18,6 +19,7 @@ const NotFound = () => {
                     </Link>
                 </div>
             </Container>
+            <Footer></Footer>
         </div>
     );
 };
