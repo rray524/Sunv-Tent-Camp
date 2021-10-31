@@ -6,3 +6,32 @@
 .copyright p {
     margin: 0;
 }
+.footer-center {
+    background: #012A3F;
+    padding: 45px 0;
+}
+.footer-initial {
+    padding: 45px 0;
+}
+.icon {
+    color: white;
+    font-size: 26px;
+    margin-right: 7%;
+}
+.location,.phone {
+    display: flex;
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-initial img {
+    width: 49%;
+}
+img.brain {
+    width: 19%;
+}
+img.national-partner {
+    width: 89%;
+}
