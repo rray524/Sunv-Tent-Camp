@@ -45,7 +45,7 @@ const Footer = () => {
                                     <div className="details">
                                         <h4 className="text-warning">27777 FRANKLIN
                                         </h4>
-                                        <h4 className="text-white">Southfield, MI 48034</h4>
+                                        <h5 className="text-white">Southfield, MI 48034</h5>
                                     </div>
                                 </div>
                                 <div className="phone">
@@ -55,7 +55,7 @@ const Footer = () => {
                                     <div className="details">
                                         <h4 className="text-warning">(888-8888765)
                                         </h4>
-                                        <h4 className="text-white">7 Days, 8am-12am EST</h4>
+                                        <h5 className="text-white">7 Days, 8am-12am EST</h5>
                                     </div>
                                 </div>
                             </div>

@@ -15,7 +15,9 @@
     align-items: center;
     justify-content: flex-start;
 }
+
 .service-point ul li {
     font-weight: lighter;
     color: #212529c2;
+    font-style: italic;
 }

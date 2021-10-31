@@ -33,7 +33,7 @@ const Contact = () => {
                         {errors.email && "Email is required"}
 
                         <input type="submit" className="text-warning" style={{ backgroundColor: '#012A3F', border: '0px' }} />
-                        <h3 className="text-success fw-bolder">{sms}</h3>
+                        <h3 className="text-success fw-bolder" style={{ fontFamily: "'Kaushan Script', cursive" }}>{sms}</h3>
                     </form>
                 </div>
             </div>

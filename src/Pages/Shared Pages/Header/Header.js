@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import logo from '../../../imgs/logo.png';
 import './Header.css'
 
 const Header = () => {
+    const { user, logout } = useAuth();
     return (
         <div id="header">
             <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -16,11 +18,28 @@ const Header = () => {
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/way">Ways To Stay</Nav.Link>
                             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-                            <Nav.Link as={Link} to="/bucket">My Bucket</Nav.Link>
-                            <Nav.Link as={Link} to="/manage">Manage Orders</Nav.Link>
-                            <Nav.Link as={Link} to="/camp">Add New Camp Pack</Nav.Link>
-                            <Nav.Link as={Link} to="/">Rahul Ray</Nav.Link>
-                            <Button variant="warning" className="ms-2">Log Out</Button>
+                            {
+                                user.displayName && <Nav.Link as={Link} to="/bucket">My Bucket</Nav.Link>
+                            }
+                            {
+                                user.displayName && <Nav.Link as={Link} to="/manage">Manage Orders</Nav.Link>
+                            }
+
+                            {
+                                user.displayName && <Nav.Link as={Link} to="/camp">Add New Camp Pack</Nav.Link>
+                            }
+
+                            {
+                                user.displayName || <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                            }
+                            {
+                                user.displayName && <Nav.Link as={Link} to="/">{user.displayName}</Nav.Link>
+                            }
+                            {
+                                user.displayName && <Button variant="warning" className="ms-2" onClick={logout}>Log Out</Button>
+                            }
+
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
