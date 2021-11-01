@@ -1,15 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
 import Service from '../Service/Service';
 import './Services.css'
 
 const Services = () => {
     const [services, setServices] = useState([]);
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         fetch('http://localhost:5000/services')
             .then(res => res.json())
-            .then(data => setServices(data));
+            .then(data => {
+                setServices(data);
+                setLoading(false)
+            });
     }, [])
+    if (loading) {
+        return (
+            <div className="spinner text-center" style={{ position: 'fixed', zIndex: '1', top: '0', left: '0', right: '0', bottom: '0' }}>
+                <Spinner animation="grow" variant="warning" />
+            </div>
+        )
+    }
     return (
         <div className="card-container">
             <Container>

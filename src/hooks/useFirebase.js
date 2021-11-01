@@ -7,6 +7,7 @@ initFirebase();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState('');
+    const [loading, setLoading] = useState(true);
     const auth = getAuth();
 
     const provider = new GoogleAuthProvider();
@@ -33,10 +34,14 @@ const useFirebase = () => {
             if (user) {
                 setUser(user)
             }
+            else {
+                setUser({})
+            }
+            setLoading(false)
         });
     }, [])
 
-    return { user, logout, handleGoogleSignIn, setError }
+    return { user, logout, handleGoogleSignIn, setError, loading }
 
 }
 
