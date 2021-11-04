@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Spinner } from 'react-bootstrap';
 import Service from '../Service/Service';
-import './Services.css'
+import './Services.css';
+import Flip from 'react-reveal/Flip';
+
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -24,15 +26,15 @@ const Services = () => {
     return (
         <div className="card-container">
             <Container>
-                <h2 className="text-center mb-5" style={{
-                    fontFamily: "'Kaushan Script', cursive", fontSize: "4vw"
-                }}>Start Exploring</h2>
+                <Flip top cascade>
+                    <h2 className="text-center mb-5" style={{
+                        fontFamily: "'Kaushan Script', cursive", fontSize: "4vw"
+                    }}>Start Exploring</h2>
+                </Flip>
                 <Row>
-
                     {
                         services.map(service => <Service key={service._id} service={service}></Service>)
                     }
-
                 </Row>
             </Container>
         </div>

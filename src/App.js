@@ -10,6 +10,8 @@ import AddCamp from './Pages/AddCamp/AddCamp';
 import NotFound from './Pages/NotFound/NotFound';
 import WayToStay from './Pages/WayToStay/WayToStay';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Cart from './Pages/Cart/Cart';
+import Success from './Pages/Success/Success';
 
 function App() {
   return (
@@ -29,8 +31,11 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
-            <PrivateRoute path="/bucket">
-              <MyBucket></MyBucket>
+            <Route path="/success">
+              <Success></Success>
+            </Route>
+            <PrivateRoute path="/booking/:serviceId">
+              <Cart></Cart>
             </PrivateRoute>
             <PrivateRoute path="/manage">
               <MyOrders></MyOrders>

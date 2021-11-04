@@ -1,0 +1,19 @@
+.cart-container img.service-img {
+    width: 100%;
+}
+.cart-container .form-div {
+    background: #f3f5f6;
+    padding: 22px 17px;
+}
+.order-details input[type="text"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+.order-details input[type="text"]:focus{
+    outline: none;
+}
+label {
+    text-decoration: underline;
+    text-decoration-color: black;
+}

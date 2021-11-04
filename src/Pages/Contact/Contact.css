@@ -17,7 +17,7 @@
     background: #f3f5f6;
     padding: 70px 0;
 }
-::placeholder {
+::placeholder, .cart-container input, label {
     color: black;
     font-size: 19px;
     font-family: 'Kaushan Script', cursive;
