@@ -8,6 +8,15 @@
     .carousel-caption {
         margin-bottom: 0!important;
     }
+    .intro-para {
+        width: 90%!important;
+    }
+    .tent-sites {
+        padding: 21px 5%!important;
+    }
+    .card-title.h5{
+        font-size: 4.5vw!important;
+    }
 }
 
 .carousel-caption {

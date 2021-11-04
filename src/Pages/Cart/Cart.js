@@ -17,7 +17,7 @@ const Cart = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://shielded-gorge-88736.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => {
                 setService(data);
@@ -29,7 +29,7 @@ const Cart = () => {
     const onSubmit = data => {
         console.log(data);
         const newBooking = { ...data }
-        fetch('http://localhost:5000/cart', {
+        fetch('https://shielded-gorge-88736.herokuapp.com/cart', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newBooking)

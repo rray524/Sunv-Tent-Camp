@@ -36,12 +36,12 @@ const MyOrders = () => {
     const [orders, setOrders] = useState([]);
     const { user } = useAuth();
     useEffect(() => {
-        fetch('http://localhost:5000/cart?email=' + user.email)
+        fetch('https://shielded-gorge-88736.herokuapp.com/cart?email=' + user.email)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
     const handleDelete = id => {
-        const url = `http://localhost:5000/cart/${id}`;
+        const url = `https://shielded-gorge-88736.herokuapp.com/cart/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

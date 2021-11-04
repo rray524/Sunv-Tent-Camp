@@ -10,7 +10,7 @@ const AddCamp = () => {
     const [sms, setSms] = useState('');
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://shielded-gorge-88736.herokuapp.com/services', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {
